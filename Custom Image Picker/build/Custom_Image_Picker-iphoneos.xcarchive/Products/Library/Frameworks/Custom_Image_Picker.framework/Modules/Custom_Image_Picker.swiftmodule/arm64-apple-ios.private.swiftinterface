@@ -1,0 +1,70 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.4.2 effective-5.10 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Custom_Image_Picker
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4.2
+import Combine
+import Foundation
+import Photos
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class ImagePickerManager {
+  public static let shared: Custom_Image_Picker::ImagePickerManager
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func requestPermission() async -> Swift::Bool
+  #endif
+  public func fetchAllPhotos() -> [Photos::PHAsset]
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func resolveImage(for asset: Photos::PHAsset, targetSize: CoreFoundation::CGSize) async -> UIKit::UIImage?
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @_Concurrency::MainActor @preconcurrency public class CustomImagePickerViewController : SwiftUI::UIHostingController<Custom_Image_Picker::CustomImagePickerView> {
+  @_Concurrency::MainActor @preconcurrency public init(onImageSelected: @escaping (UIKit::UIImage) -> Swift::Void)
+  @objc deinit
+}
+@_Concurrency::MainActor @preconcurrency public struct CustomImagePickerView : SwiftUICore::View {
+  @_Concurrency::MainActor @preconcurrency public var onImageSelected: ((UIKit::UIImage) -> Swift::Void)?
+  @_Concurrency::MainActor @preconcurrency public init(onImageSelected: ((UIKit::UIImage) -> Swift::Void)? = nil)
+  @_Concurrency::MainActor @preconcurrency public var body: some SwiftUICore::View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s19Custom_Image_Picker0abC4ViewV4bodyQrvp", 0) __
+}
+@_Concurrency::MainActor public class ImagePickerViewModel : Combine::ObservableObject {
+  @Combine::Published<[Photos::PHAsset]> @_projectedValueProperty($assets) @_Concurrency::MainActor public var assets: [Photos::PHAsset] {
+    get
+    @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    set
+    @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    _modify
+  }
+  @_Concurrency::MainActor public var $assets: Combine::Published<[Photos::PHAsset]>.Combine::Publisher {
+    get
+    @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
+    set
+  }
+  @Combine::Published<Swift::Bool> @_projectedValueProperty($permissionGranted) @_Concurrency::MainActor public var permissionGranted: Swift::Bool {
+    get
+    @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    set
+    @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+    _modify
+  }
+  @_Concurrency::MainActor public var $permissionGranted: Combine::Published<Swift::Bool>.Combine::Publisher {
+    get
+    @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
+    set
+  }
+  @_Concurrency::MainActor public init()
+  @_Concurrency::MainActor public func requestPermissionsAndFetch()
+  @_Concurrency::MainActor public func fetchImage(for asset: Photos::PHAsset, targetSize: CoreFoundation::CGSize) async -> UIKit::UIImage?
+  public typealias ObjectWillChangePublisher = Combine::ObservableObjectPublisher
+  @objc deinit
+}
+extension Custom_Image_Picker::CustomImagePickerViewController : Swift::Sendable {}
+extension Custom_Image_Picker::CustomImagePickerView : Swift::Sendable {}
+extension Custom_Image_Picker::ImagePickerViewModel : Swift::Sendable {}

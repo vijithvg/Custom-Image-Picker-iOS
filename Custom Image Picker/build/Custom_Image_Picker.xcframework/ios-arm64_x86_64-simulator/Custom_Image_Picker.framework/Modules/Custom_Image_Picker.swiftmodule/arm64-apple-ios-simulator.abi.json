@@ -1,0 +1,1457 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "Custom_Image_Picker",
+    "printedName": "Custom_Image_Picker",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Photos",
+        "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImagePickerManager",
+        "printedName": "ImagePickerManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImagePickerManager",
+                "printedName": "Custom_Image_Picker.ImagePickerManager",
+                "usr": "s:19Custom_Image_Picker0bC7ManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Custom_Image_Picker0bC7ManagerC6sharedACvpZ",
+            "mangledName": "$s19Custom_Image_Picker0bC7ManagerC6sharedACvpZ",
+            "moduleName": "Custom_Image_Picker",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImagePickerManager",
+                    "printedName": "Custom_Image_Picker.ImagePickerManager",
+                    "usr": "s:19Custom_Image_Picker0bC7ManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC7ManagerC6sharedACvgZ",
+                "mangledName": "$s19Custom_Image_Picker0bC7ManagerC6sharedACvgZ",
+                "moduleName": "Custom_Image_Picker",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "requestPermission",
+            "printedName": "requestPermission()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Custom_Image_Picker0bC7ManagerC17requestPermissionSbyYaF",
+            "mangledName": "$s19Custom_Image_Picker0bC7ManagerC17requestPermissionSbyYaF",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchAllPhotos",
+            "printedName": "fetchAllPhotos()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Photos.PHAsset]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PHAsset",
+                    "printedName": "Photos.PHAsset",
+                    "usr": "c:objc(cs)PHAsset"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Custom_Image_Picker0bC7ManagerC14fetchAllPhotosSaySo7PHAssetCGyF",
+            "mangledName": "$s19Custom_Image_Picker0bC7ManagerC14fetchAllPhotosSaySo7PHAssetCGyF",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resolveImage",
+            "printedName": "resolveImage(for:targetSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PHAsset",
+                "printedName": "Photos.PHAsset",
+                "usr": "c:objc(cs)PHAsset"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Custom_Image_Picker0bC7ManagerC07resolveB03for10targetSizeSo7UIImageCSgSo7PHAssetC_So6CGSizeVtYaF",
+            "mangledName": "$s19Custom_Image_Picker0bC7ManagerC07resolveB03for10targetSizeSo7UIImageCSgSo7PHAssetC_So6CGSizeVtYaF",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Nonisolated",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19Custom_Image_Picker0bC7ManagerC",
+        "mangledName": "$s19Custom_Image_Picker0bC7ManagerC",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CustomImagePickerViewController",
+        "printedName": "CustomImagePickerViewController",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(onImageSelected:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomImagePickerViewController",
+                "printedName": "Custom_Image_Picker.CustomImagePickerViewController",
+                "usr": "s:19Custom_Image_Picker0abC14ViewControllerC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIImage) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Custom_Image_Picker0abC14ViewControllerC02onB8SelectedACySo7UIImageCc_tcfc",
+            "mangledName": "$s19Custom_Image_Picker0abC14ViewControllerC02onB8SelectedACySo7UIImageCc_tcfc",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rootView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomImagePickerViewController",
+                "printedName": "Custom_Image_Picker.CustomImagePickerViewController",
+                "usr": "s:19Custom_Image_Picker0abC14ViewControllerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomImagePickerView",
+                "printedName": "Custom_Image_Picker.CustomImagePickerView",
+                "usr": "s:19Custom_Image_Picker0abC4ViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Custom_Image_Picker0abC14ViewControllerC04rootD0AcA0abcD0V_tcfc",
+            "mangledName": "$s19Custom_Image_Picker0abC14ViewControllerC04rootD0AcA0abcD0V_tcfc",
+            "moduleName": "Custom_Image_Picker",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:rootView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Custom_Image_Picker.CustomImagePickerViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomImagePickerViewController",
+                    "printedName": "Custom_Image_Picker.CustomImagePickerViewController",
+                    "usr": "s:19Custom_Image_Picker0abC14ViewControllerC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CustomImagePickerView",
+                "printedName": "Custom_Image_Picker.CustomImagePickerView",
+                "usr": "s:19Custom_Image_Picker0abC4ViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Custom_Image_Picker0abC14ViewControllerC5coder04rootD0ACSgSo7NSCoderC_AA0abcD0Vtcfc",
+            "mangledName": "$s19Custom_Image_Picker0abC14ViewControllerC5coder04rootD0ACSgSo7NSCoderC_AA0abcD0Vtcfc",
+            "moduleName": "Custom_Image_Picker",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19Custom_Image_Picker0abC14ViewControllerC",
+        "mangledName": "$s19Custom_Image_Picker0abC14ViewControllerC",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "superclassUsr": "s:7SwiftUI19UIHostingControllerC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "SwiftUI.UIHostingController<Custom_Image_Picker.CustomImagePickerView>",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_UIHostingViewable",
+            "printedName": "_UIHostingViewable",
+            "usr": "s:7SwiftUI18_UIHostingViewableP",
+            "mangledName": "$s7SwiftUI18_UIHostingViewableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Photos",
+        "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CustomImagePickerView",
+        "printedName": "CustomImagePickerView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "onImageSelected",
+            "printedName": "onImageSelected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIImage) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIImage) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Custom_Image_Picker0abC4ViewV02onB8SelectedySo7UIImageCcSgvp",
+            "mangledName": "$s19Custom_Image_Picker0abC4ViewV02onB8SelectedySo7UIImageCcSgvp",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIImage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIImage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIImage",
+                            "printedName": "UIKit.UIImage",
+                            "usr": "c:objc(cs)UIImage"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0abC4ViewV02onB8SelectedySo7UIImageCcSgvg",
+                "mangledName": "$s19Custom_Image_Picker0abC4ViewV02onB8SelectedySo7UIImageCcSgvg",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIImage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIImage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIImage",
+                            "printedName": "UIKit.UIImage",
+                            "usr": "c:objc(cs)UIImage"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0abC4ViewV02onB8SelectedySo7UIImageCcSgvs",
+                "mangledName": "$s19Custom_Image_Picker0abC4ViewV02onB8SelectedySo7UIImageCcSgvs",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0abC4ViewV02onB8SelectedySo7UIImageCcSgvM",
+                "mangledName": "$s19Custom_Image_Picker0abC4ViewV02onB8SelectedySo7UIImageCcSgvM",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(onImageSelected:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomImagePickerView",
+                "printedName": "Custom_Image_Picker.CustomImagePickerView",
+                "usr": "s:19Custom_Image_Picker0abC4ViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIImage) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIImage) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Custom_Image_Picker0abC4ViewV02onB8SelectedACySo7UIImageCcSg_tcfc",
+            "mangledName": "$s19Custom_Image_Picker0abC4ViewV02onB8SelectedACySo7UIImageCcSg_tcfc",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Custom_Image_Picker0abC4ViewV4bodyQrvp",
+            "mangledName": "$s19Custom_Image_Picker0abC4ViewV4bodyQrvp",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0abC4ViewV4bodyQrvg",
+                "mangledName": "$s19Custom_Image_Picker0abC4ViewV4bodyQrvg",
+                "moduleName": "Custom_Image_Picker",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19Custom_Image_Picker0abC4ViewV",
+        "mangledName": "$s19Custom_Image_Picker0abC4ViewV",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Photos",
+        "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Photos",
+        "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImagePickerViewModel",
+        "printedName": "ImagePickerViewModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "assets",
+            "printedName": "assets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Photos.PHAsset]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PHAsset",
+                    "printedName": "Photos.PHAsset",
+                    "usr": "c:objc(cs)PHAsset"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Custom_Image_Picker0bC9ViewModelC6assetsSaySo7PHAssetCGvp",
+            "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC6assetsSaySo7PHAssetCGvp",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Custom",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Photos.PHAsset]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PHAsset",
+                        "printedName": "Photos.PHAsset",
+                        "usr": "c:objc(cs)PHAsset"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC6assetsSaySo7PHAssetCGvg",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC6assetsSaySo7PHAssetCGvg",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Photos.PHAsset]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PHAsset",
+                        "printedName": "Photos.PHAsset",
+                        "usr": "c:objc(cs)PHAsset"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC6assetsSaySo7PHAssetCGvs",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC6assetsSaySo7PHAssetCGvs",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC6assetsSaySo7PHAssetCGvM",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC6assetsSaySo7PHAssetCGvM",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$assets",
+            "printedName": "$assets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Array<Photos.PHAsset>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Custom_Image_Picker0bC9ViewModelC7$assets7Combine9PublishedV9PublisherVySaySo7PHAssetCG_Gvp",
+            "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC7$assets7Combine9PublishedV9PublisherVySaySo7PHAssetCG_Gvp",
+            "moduleName": "Custom_Image_Picker",
+            "implicit": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Array<Photos.PHAsset>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC7$assets7Combine9PublishedV9PublisherVySaySo7PHAssetCG_Gvg",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC7$assets7Combine9PublishedV9PublisherVySaySo7PHAssetCG_Gvg",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Array<Photos.PHAsset>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC7$assets7Combine9PublishedV9PublisherVySaySo7PHAssetCG_Gvs",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC7$assets7Combine9PublishedV9PublisherVySaySo7PHAssetCG_Gvs",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC7$assets7Combine9PublishedV9PublisherVySaySo7PHAssetCG_GvM",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC7$assets7Combine9PublishedV9PublisherVySaySo7PHAssetCG_GvM",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "permissionGranted",
+            "printedName": "permissionGranted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Custom_Image_Picker0bC9ViewModelC17permissionGrantedSbvp",
+            "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC17permissionGrantedSbvp",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Custom",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC17permissionGrantedSbvg",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC17permissionGrantedSbvg",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC17permissionGrantedSbvs",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC17permissionGrantedSbvs",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC17permissionGrantedSbvM",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC17permissionGrantedSbvM",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$permissionGranted",
+            "printedName": "$permissionGranted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Custom_Image_Picker0bC9ViewModelC18$permissionGranted7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC18$permissionGranted7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "Custom_Image_Picker",
+            "implicit": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC18$permissionGranted7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC18$permissionGranted7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC18$permissionGranted7Combine9PublishedV9PublisherVySb_Gvs",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC18$permissionGranted7Combine9PublishedV9PublisherVySb_Gvs",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC18$permissionGranted7Combine9PublishedV9PublisherVySb_GvM",
+                "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC18$permissionGranted7Combine9PublishedV9PublisherVySb_GvM",
+                "moduleName": "Custom_Image_Picker",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImagePickerViewModel",
+                "printedName": "Custom_Image_Picker.ImagePickerViewModel",
+                "usr": "s:19Custom_Image_Picker0bC9ViewModelC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Custom_Image_Picker0bC9ViewModelCACycfc",
+            "mangledName": "$s19Custom_Image_Picker0bC9ViewModelCACycfc",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "requestPermissionsAndFetch",
+            "printedName": "requestPermissionsAndFetch()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Custom_Image_Picker0bC9ViewModelC26requestPermissionsAndFetchyyF",
+            "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC26requestPermissionsAndFetchyyF",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchImage",
+            "printedName": "fetchImage(for:targetSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PHAsset",
+                "printedName": "Photos.PHAsset",
+                "usr": "c:objc(cs)PHAsset"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Custom_Image_Picker0bC9ViewModelC05fetchB03for10targetSizeSo7UIImageCSgSo7PHAssetC_So6CGSizeVtYaF",
+            "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC05fetchB03for10targetSizeSo7UIImageCSgSo7PHAssetC_So6CGSizeVtYaF",
+            "moduleName": "Custom_Image_Picker",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19Custom_Image_Picker0bC9ViewModelC",
+        "mangledName": "$s19Custom_Image_Picker0bC9ViewModelC",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "AccessControl",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Custom_Image_Picker",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vijith\/Documents\/Coding\/iOS Upskill\/Custom Image Picker\/Custom Image Picker\/UI\/View\/CustomImagePickerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 358,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/vijith\/Documents\/Coding\/iOS Upskill\/Custom Image Picker\/Custom Image Picker\/UI\/View\/CustomImagePickerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 373,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vijith\/Documents\/Coding\/iOS Upskill\/Custom Image Picker\/Custom Image Picker\/UI\/ViewModels\/ImagePickerViewModel.swift",
+      "kind": "Array",
+      "offset": 261,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vijith\/Documents\/Coding\/iOS Upskill\/Custom Image Picker\/Custom Image Picker\/UI\/ViewModels\/ImagePickerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 316,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
