@@ -11,6 +11,7 @@
     ],
   },
   "files": [
+    { "path": "Package.swift" },
     { "kind": "folder", "path": "Custom Image Picker", "target-membership": [ "Custom Image Picker" ] },
     { "kind": "folder", "path": "Custom Image PickerTests", "target-membership": [ "Custom Image PickerTests" ] },
     { "kind": "folder", "path": "CustomPickerExample", "target-membership": [ "CustomPickerExample" ] },
