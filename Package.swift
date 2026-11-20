@@ -22,15 +22,12 @@ let package = Package(
     targets: [
         .target(
             name: "CustomImagePicker",
-            path: "CustomImagePicker",
-            exclude: [
-                "CustomImagePicker.h" // Exclude the Xcode umbrella header
-            ]
-        ),
-        .testTarget(
-            name: "CustomImagePickerTests",
-            dependencies: ["CustomImagePicker"],
-            path: "CustomImagePickerTests"
-        ),
+            path: "Custom Image Picker/Custom Image Picker" // Match your exact folder name on disk
+        )
+//        .testTarget(
+//            name: "CustomImagePickerTests",
+//            dependencies: ["CustomImagePicker"],
+//            path: "Custom Image PickerTests" // Match your exact test folder name on disk
+//        ),
     ]
 )

@@ -9,7 +9,7 @@
 import Photos
 import UIKit
 
-public class ImagePickerManager {
+public final class ImagePickerManager: Sendable {
     public static let shared = ImagePickerManager()
     
     private init() {}
